@@ -12,10 +12,6 @@ const Search = () => {
     Aos.init({duration: 2000})
   }, [])
 
-  const pres = ()=> {
-    spanBtn
-    
-  }
   return(
     <main className="search container section" id="Search">
 
@@ -23,7 +19,7 @@ const Search = () => {
 
         <div className="btns flex">
 
-          <div className="singleBtn" onClick={pres}> 
+          <div className="singleBtn" > 
             <span className="spanBtn">Economy</span>
           </div>  {/* // funcion para que queden todos seleccionado */}
 
