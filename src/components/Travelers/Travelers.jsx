@@ -40,7 +40,7 @@ const Travelers = () => {
   }, [])
 
   return(
-    <main className="travelers container section">
+    <main className="travelers container section" id="Destination">
       <section className="sectionContainer">
         <h2>Top travelers of this month!</h2>
 

@@ -7,7 +7,7 @@ import {AiFillInstagram} from 'react-icons/ai'
 
 const Footer = () => {
   return(
-    <main className="footer">
+    <main className="footer" id="Footer">
       <section className="sectionContainer container grid">
         <div className="gridOne">
           <picture className="logoDiv">

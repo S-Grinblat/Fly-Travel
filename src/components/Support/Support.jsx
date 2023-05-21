@@ -11,7 +11,7 @@ const Support = () => {
   }, [])
 
   return(
-    <main className="support container section">
+    <main className="support container section" id="Support">
       <section className="sectionContainer">
         <div className="titleDiv">
           <small>Travel Support</small>

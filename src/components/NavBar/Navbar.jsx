@@ -1,10 +1,9 @@
 import React, {useState} from "react";
-import {SiConsul} from 'react-icons/si'
 import {BsPhoneVibrate} from 'react-icons/bs'
 import {AiOutlineGlobal} from 'react-icons/ai'
 import {CgMenuGridO} from 'react-icons/cg'
 import logo from '../../../Logos-icons/logo.webp'
-
+import { DropdownMenu } from "./users/userMenu";
 const Navbar = () => {
 
   const [active, setActive] = useState('navBarMenu')
@@ -32,19 +31,13 @@ const Navbar = () => {
     <main className="navBar flex">
 
       <section className="navBarOne flex">
-        <div>
-          <SiConsul className="icon"/>
-        </div>
 
         <ul className="none ">
           <li className="flex"> <BsPhoneVibrate className="icon"/> Support</li>
           <li className="flex"> <AiOutlineGlobal className="icon" /> Languages</li>
         </ul>
 
-        <div className="atb flex">
-          <span className="atb-span">Sing In</span>
-          <span className="atb-span">Sing Out</span>
-        </div>
+        <DropdownMenu/>
       </section>
 
       <section className={noBg}>
@@ -53,15 +46,16 @@ const Navbar = () => {
         </picture>
 
         <div className={active}>
-          <ul className="menu">
-            <li  onClick={removeNavBar} className="listItem">Home</li>
-            <li  onClick={removeNavBar} className="listItem">About</li>
-            <li  onClick={removeNavBar} className="listItem">Offers</li>
-            <li  onClick={removeNavBar} className="listItem">Seats</li>
-            <li  onClick={removeNavBar} className="listItem">Destination</li>
-            <button  onClick={removeNavBar} className="btn flex btnOne">Contact</button>
+          <div className="menu">
+            <a onClick={removeNavBar} href="#Home" className="listItem">Home</a>
+            <a onClick={removeNavBar} href="#Search" className="listItem">Search</a>
+            <a onClick={removeNavBar} href="#Support" className="listItem">Support</a>
+            <a onClick={removeNavBar} href="#Info" className="listItem">Info</a>
+            <a onClick={removeNavBar} href="#Lounge" className="listItem">Lounge</a>
+            <a onClick={removeNavBar} href="#Destination" className="listItem">Destination</a>
+            <a onClick={removeNavBar} href="#Footer" className="btn flex btnOne">Contact</a>
             <button className="btn flex btnTwo">Contact</button>
-          </ul>
+          </div>
         </div>
 
         <div onClick= {showNavBar} className="toggleIcon">

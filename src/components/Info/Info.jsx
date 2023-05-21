@@ -13,7 +13,7 @@ const Info = () => {
   }, [])
 
   return(
-    <main className="info section">
+    <main className="info section" id="Info">
       <section className="infoContainer container">
         <div className="titleDiv flex">
           <h2>Travel to make memories all around the world</h2>

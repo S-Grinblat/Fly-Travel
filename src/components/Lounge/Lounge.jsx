@@ -2,7 +2,7 @@ import React from "react";
 import img from '../../../Logos-icons/tripulant.webp';
 const Lounge = () => {
   return(
-    <main className="lounge container section">
+    <main className="lounge container section" id="Lounge">
       <section className="sectionContainer grid">
         <picture className="imgDiv">
           <img src={img} alt="tripulant" className="imgLounge"/>

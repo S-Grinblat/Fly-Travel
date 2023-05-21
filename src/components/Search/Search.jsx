@@ -21,7 +21,7 @@ const Search = () => {
 
           <div className="singleBtn" > 
             <span className="spanBtn">Economy</span>
-          </div>  {/* // funcion para que queden todos seleccionado */}
+          </div>
 
           <div className="singleBtn">
             <span className="spanBtn">Business Class</span>
@@ -75,8 +75,9 @@ const Search = () => {
             </div>
           </div>
 
-          <button className="btn btnBlock flex">Search Flight</button> 
-          {/* //colocar submit */}
+          <div>
+            <input type="submit" className="btn btnBlock flex" value={`Search Flight`}></input>
+          </div> 
 
         </section>
 
