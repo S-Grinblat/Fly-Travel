@@ -50,7 +50,7 @@ const Travelers = () => {
             travelers.map(({id, destinationImage, travelerImage, travelerName, socialLink})=>{
               return(
                 <div data-aos="fade-up" data-aos-duration="2500" key={id} className="singleTraveler">
-                  <img src={destinationImage} alt="Buenos Aires" className="destinationImage" />
+                  <img src={destinationImage} loading="lazy" alt="Buenos Aires" className="destinationImage" />
 
                   <div className="travelerDetails">
                     <picture className="travelerPicture">

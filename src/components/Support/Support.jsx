@@ -42,9 +42,9 @@ const Support = () => {
 
           </div>
 
-          <div data-aos="fade-right" data-aos-duration="2500" className="imgDiv">
-            <img src={img} alt="ventana" className="imgSupport"/>
-          </div>
+          <picture data-aos="fade-right" data-aos-duration="2500" className="imgDiv">
+            <img src={img} alt="ventana" loading="lazy" className="imgSupport"/>
+          </picture>
         </section>
       </section>
     </main>

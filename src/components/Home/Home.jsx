@@ -21,10 +21,10 @@ const Home = () => {
       <div className="homeImages flex">
 
         <picture className="videoDiv">
-          <img src={cielo} className="video"></img>
+          <img src={cielo} loading="lazy" className="video"></img>
         </picture>
 
-        <img src={aeroplane} alt="Aeroplane" className="plane"/>
+        <img src={aeroplane} loading="lazy" alt="Aeroplane" className="plane"/>
       </div>
     </section>
   )

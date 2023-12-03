@@ -5,7 +5,7 @@ const Lounge = () => {
     <main className="lounge container section" id="Lounge">
       <section className="sectionContainer grid">
         <picture className="imgDiv">
-          <img src={img} alt="tripulant" className="imgLounge"/>
+          <img src={img} alt="tripulant" loading="lazy" className="imgLounge"/>
         </picture>
 
         <div className="textDiv">
